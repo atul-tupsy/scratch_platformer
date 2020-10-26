@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 2</name>
+    <events>
+        <variable comment="Completed bonus level 0= NO / 1=YES" constant="0" name="bonusLevel2" sid="240393264233492" static="0" type="number">0</variable>
+        <variable comment="Increment when a coin is collected" constant="0" name="Score2" sid="593805701624488" static="0" type="number">0</variable>
+        <event-block sid="970808529244475">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="307894490630721" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="379911978626258" type="Hero">
+                    <param id="0" name="Pin to">Hero_Shadow</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="Animation Controls" sid="377166874709990" title="User Controls2">
+            <sub-events>
+                <event-block sid="268361072850224">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="654488381191648" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="199702179896009" type="Hero_Shadow" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="975224987320797" type="Hero">
+                            <param id="0" name="Animation">&quot;Run&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="246779086291809" type="Hero">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="624926967753484" type="Hero">
+                            <param id="0" name="Instance variable">direction</param>
+                            <param id="1" name="Value">&quot;Right&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="975623041176433">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="953736442797738" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="141403713136954" type="Hero_Shadow" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="660749308852418" type="Hero">
+                            <param id="0" name="Animation">&quot;Run&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="677212275052455" type="Hero">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="280348527988599" type="Hero">
+                            <param id="0" name="Instance variable">direction</param>
+                            <param id="1" name="Value">&quot;Left&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="605727956047317">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="685698570234405" type="Hero_Shadow" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="464237405691599" type="Hero">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="895134467662947">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="694131002130578" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="434068313892548" type="Hero_Shadow">
+                            <param id="0" name="Max Speed">450</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="477053931626831">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="166523226684441" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="120245292662502" type="Hero_Shadow">
+                            <param id="0" name="Max Speed">330</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="369584339868173">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="645413030015386" type="System" />
+                        <condition id="-8" name="Compare two values" sid="252396367668585" type="System">
+                            <param id="0" name="First value">Hero_Shadow.Platform.MaxSpeed</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">330</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="4" name="Set jump strength" sid="621311224773359" type="Hero_Shadow">
+                            <param id="0" name="Jump strength">850</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="764359978882365">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="153101060561740" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="4" name="Set jump strength" sid="378311373245495" type="Hero_Shadow">
+                            <param id="0" name="Jump strength">650</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="108346585091478">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="245159874973379" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="730509030017646">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="295340342145935" type="System">
+                                    <param id="0" name="First value">Hero_Shadow.Platform.MaxSpeed</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">330</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="4" name="Set jump strength" sid="360742207072359" type="Hero_Shadow">
+                                    <param id="0" name="Jump strength">850</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="212679316424444">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="192192537356747" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="4" name="Set jump strength" sid="463310634953736" type="Hero_Shadow">
+                                    <param id="0" name="Jump strength">650</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="106272869451033">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="689294637373144" type="Hero_Shadow">
+                    <param id="0" name="Object">trigger_break</param>
+                </condition>
+                <condition id="-15" name="Pick nearest/furthest" sid="595114731679047" type="Ground2">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="X">Hero_Shadow.X</param>
+                    <param id="2" name="Y">Hero_Shadow.Y</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="932988268453495" type="Hero">
+                    <param id="0" name="Animation">&quot;Collision&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="877365202108724" type="Ground2">
+                    <param id="0" name="Object">ParticleBlock</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="635751635104852" type="ParticleBlock">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-9" name="Destroy" sid="992128659381161" type="Ground2" />
+                <action id="-9" name="Destroy" sid="391535402815549" type="trigger_break" />
+            </actions>
+        </event-block>
+        <event-block sid="792680920494062">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="163674541693733" type="Hero_Shadow">
+                    <param id="0" name="Object">BonusBoxTrigger</param>
+                </condition>
+                <condition id="-15" name="Pick nearest/furthest" sid="946114509680000" type="BonusBox">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="X">Hero_Shadow.X</param>
+                    <param id="2" name="Y">Hero_Shadow.Y</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="106468870949019" type="Hero">
+                    <param id="0" name="Animation">&quot;Collision&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="523378280565582" type="BonusBox">
+                    <param id="0" name="Object">Coin</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="785601139838216" type="Coin" />
+                <action id="5" name="Set frame" sid="924674567561942" type="BonusBox">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="567128971803624" type="BonusBox">
+                    <param id="0" name="Start Mode">2</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="427105765836613" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action behavior="LiteTween" id="14" name="Stop" sid="115964462878006" type="BonusBox">
+                    <param id="0" name="Stop Mode">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="880027773219692" type="BonusBoxTrigger" />
+            </actions>
+        </event-block>
+        <event-block sid="615859922325471">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="771413456487092" type="Enemy">
+                    <param id="0" name="Instance variable">direction</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Right&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="568740505819503" type="Enemy">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="831089052448198" type="Enemy">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="937481431836990">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="736729529982556" type="Enemy">
+                    <param id="0" name="Instance variable">direction</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Left&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="121882346142929" type="Enemy">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="802080097100285" type="Enemy">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="611972278568913">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="348838605131374" type="Enemy">
+                    <param id="0" name="Object">EnemyBarrier</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="596757759667717" type="Enemy">
+                    <param id="0" name="Object">Arrow</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="170376573522659" type="Arrow">
+                    <param id="0" name="X">Hero_Shadow.X</param>
+                    <param id="1" name="Y">Hero_Shadow.Y</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="450275853086752">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="585818793910860" type="Enemy">
+                            <param id="0" name="Instance variable">direction</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Right&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="579102771637295" type="Enemy">
+                            <param id="0" name="Instance variable">direction</param>
+                            <param id="1" name="Value">&quot;Left&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="590741433250616">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="773965561278975" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="948396774725064" type="Enemy">
+                            <param id="0" name="Instance variable">direction</param>
+                            <param id="1" name="Value">&quot;Right&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="947557959703609">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="530956272377951" type="Hero_Shadow">
+                    <param id="0" name="Object">Enemy</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="734578261493735">
+                    <conditions>
+                        <condition behavior="Platform" id="4" name="Is falling" sid="209722968475615" type="Hero_Shadow" />
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="821375375841445" type="Enemy">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="157984116814288" type="Enemy">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="178701950946974" type="Enemy">
+                            <param id="0" name="Animation">&quot;Die&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="332323739014922" type="Enemy" />
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="785362433337827" type="Hero_Shadow">
+                            <param id="0" name="Vector Y">-650</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="258405167361809">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="104209041897371" type="Hero_Shadow">
+                    <param id="0" name="Object">Coin</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="503455983848939" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="764480816833535" type="scoreTxt">
+                    <param id="0" name="Text">&quot;Score: &quot;&amp;Score</param>
+                </action>
+                <action id="-9" name="Destroy" sid="510062896226672" type="Coin" />
+            </actions>
+        </event-block>
+        <event-block sid="269809868841662">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="323292894024266" type="Hero_Shadow">
+                    <param id="0" name="Object">Arrow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="864505320209875" type="Hero">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">3.0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="929538543871010">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="988682559713021" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="134765964132935" type="Hero_Shadow">
+                    <param id="0" name="Object">HiddenLevel</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="790126232421608" type="System">
+                    <param id="0" name="First value">HiddenLevel.UID</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">52</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="723992986497042" type="Hero_Shadow">
+                    <param id="0" name="Input">1</param>
+                </action>
+                <action id="-25" name="Move to bottom" sid="775594977624094" type="Hero" />
+                <action behavior="Pin" id="1" name="Unpin" sid="750442516647770" type="Hero" />
+                <action behavior="LiteTween" id="10" name="Start" sid="726380839654447" type="Hero">
+                    <param id="0" name="Start Mode">1</param>
+                    <param id="1" name="Force use current">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="291975366803882" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="131831951621301" type="System">
+                    <param id="0" name="Layout">bonus</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="871827067106585">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="614274108161146" type="Hero_Shadow">
+                    <param id="0" name="Object">Doors</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="414168949161214" type="System">
+                    <param id="0" name="Layout">level3</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

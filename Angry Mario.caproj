@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Angry Mario</name>
+    <description>Angry Mario is the twin of super</description>
+    <version>1.0.0.0</version>
+    <author>Atul</author>
+    <author-email>atul@gmail.com</author-email>
+    <author-website>http://atul@gmail.com</author-website>
+    <app-id>com.angry.mario</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>27900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Ground1" sid="528391345958476">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="716406746471377">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="23" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="581097154562450" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\dirt_S.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\dirt_W.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\dirtTiles_E.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\dirtTiles_N.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\dirtTiles_S.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\dirtTiles_W.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\planks_E.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\planks_N.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\planks_S.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\planks_W.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stone_E.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stone_N.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stone_S.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stone_W.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stoneCorner_E.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stoneCorner_N.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stoneCorner_S.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stoneCorner_W.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stoneInset_S.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stoneInset_W.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\woodenCrate_N.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\woodenCrate_S.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\woodenCrate_W.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.754286" y="0.00979592" />
+                            <point x="0.754286" y="0.979592" />
+                            <point x="0" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Hero_Shadow" sid="523507858453181">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="595537942121177">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="304521551902786">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="743428830045657" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Hero" sid="541478145985033">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="direction of Run Left or Right" name="direction" sid="702695033340254" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="736543467701079">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="593878360501522">
+                    <behavior id="Flash" />
+                </behavior-type>
+                <behavior-type name="LiteTween" sid="380206776934665">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="12" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="184039968762112" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Idle\idle-1.png">
+                        <collision-poly>
+                            <point x="0.4" y="0.16129" />
+                            <point x="0.48" y="0.016129" />
+                            <point x="0.8" y="0.0806452" />
+                            <point x="0.84" y="0.5" />
+                            <point x="0.84" y="0.935484" />
+                            <point x="0.48" y="0.66129" />
+                            <point x="0.04" y="0.983871" />
+                            <point x="0.12" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Idle\idle-2.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Idle\idle-3.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Idle\idle-4.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Idle\idle-5.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Idle\idle-6.png" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Idle\idle-with-weapon-1.png" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Idle\idle-with-weapon-2.png" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Idle\idle-with-weapon-3.png" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Idle\idle-with-weapon-4.png" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Idle\idle-with-weapon-5.png" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Idle\idle-with-weapon-6.png" />
+                </animation>
+                <animation framecount="12" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="124776463602700" speed="5">
+                    <frame duration="1" hotspotX="0.515152" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Run\run-1.png" />
+                    <frame duration="1" hotspotX="0.515152" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Run\run-2.png" />
+                    <frame duration="1" hotspotX="0.525" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Run\run-3.png" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Run\run-4.png" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Run\run-5.png" />
+                    <frame duration="1" hotspotX="0.515152" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Run\run-6.png" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Run\run-7.png" />
+                    <frame duration="1" hotspotX="0.535714" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Run\run-8.png" />
+                    <frame duration="1" hotspotX="0.512195" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Run\run-9.png" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Run\run-10.png" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Run\run-11.png" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Run\run-12.png" />
+                </animation>
+                <animation framecount="2" loop="0" name="Collision" pingpong="0" repeatcount="1" repeatto="0" sid="375126512127660" speed="5">
+                    <frame duration="1" hotspotX="0.516129" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Hit\hit-idle-B2.png" />
+                    <frame duration="1" hotspotX="0.53125" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Player\PNG\Hit\hit-idle-B3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="300947238388067">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="trigger_break" sid="550065737896952">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="669261125573538" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ParticleBlock" sid="746530013988453">
+            <plugin id="Particles" />
+            <texture original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stoneInset_N.png" />
+        </object-type>
+        <object-type name="Ground2" sid="352981526474064">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="651202208799793">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="23" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="503591190654015" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\dirt_S.png" />
+                    <frame duration="1" hotspotX="0.458333" hotspotY="0.583333" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\dirt_W.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\dirtTiles_E.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\dirtTiles_N.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\dirtTiles_S.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\dirtTiles_W.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\planks_E.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\planks_N.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\planks_S.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\planks_W.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stone_E.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stone_N.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stone_S.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stone_W.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stoneCorner_E.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stoneCorner_N.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stoneCorner_S.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stoneCorner_W.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stoneInset_S.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stoneInset_W.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\woodenCrate_N.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\woodenCrate_S.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\woodenCrate_W.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.754286" y="0.00979592" />
+                            <point x="0.754286" y="0.979592" />
+                            <point x="0" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BonusBox" sid="393115080859484">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="393975053014226">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="LiteTween" sid="385387704342257">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="187496171244290" speed="0">
+                    <frame duration="1" hotspotX="0.504348" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\chestClosed_N.png">
+                        <image-point name="Imagepoint 1" x="0.469565" y="-0.479452" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BonusBoxTrigger" sid="313222530358035">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="977718108900657" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Coin" sid="874167001537714">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="565237368540321">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="404549751329786" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\COIN POTIONS TRESSURE\PNG\Coins_00.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\COIN POTIONS TRESSURE\PNG\Coins_01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.32" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\COIN POTIONS TRESSURE\PNG\Coins_02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\COIN POTIONS TRESSURE\PNG\Coins_03.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemy" sid="628670682664261">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Right | Left" name="direction" sid="543582627825126" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="862943369128755">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="445631552538055">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="429736792551359" speed="10">
+                    <frame duration="1" hotspotX="0.516129" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\2 Enemy-SKELETON_SHIELD\PNG\idle-1.png" />
+                    <frame duration="1" hotspotX="0.515152" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\2 Enemy-SKELETON_SHIELD\PNG\idle-2.png" />
+                    <frame duration="1" hotspotX="0.516129" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\2 Enemy-SKELETON_SHIELD\PNG\idle-3.png" />
+                    <frame duration="1" hotspotX="0.515152" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\2 Enemy-SKELETON_SHIELD\PNG\idle-4.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="Die" pingpong="0" repeatcount="1" repeatto="0" sid="386522671393663" speed="5">
+                    <frame duration="1" hotspotX="0.513514" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\2 Enemy-SKELETON_SHIELD\PNG\dead-1.png" />
+                    <frame duration="1" hotspotX="0.525" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\2 Enemy-SKELETON_SHIELD\PNG\dead-2.png" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\2 Enemy-SKELETON_SHIELD\PNG\dead-3.png" />
+                    <frame duration="1" hotspotX="0.52381" hotspotY="1" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\2 Enemy-SKELETON_SHIELD\PNG\dead-4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EnemyBarrier" sid="911670768732354">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="749178147753261" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="scoreTxt" sid="136287233076568">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Arrow" sid="266645709286614">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="998595243667645">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="911004683010290" speed="5">
+                    <frame duration="1" hotspotX="0.460396" hotspotY="0.919355">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.638613" y="0" />
+                            <point x="0.638613" y="0.564517" />
+                            <point x="0" y="0.564516" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HiddenLevel" sid="394344484404552">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="312045794864582" speed="5">
+                    <frame duration="1" hotspotX="0.412844" hotspotY="-0.621849" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\barrel_E.png">
+                        <collision-poly>
+                            <point x="0.412844" y="0.00840336" />
+                            <point x="0.761468" y="0.773109" />
+                            <point x="0.412844" y="0.983193" />
+                            <point x="0.0642202" y="0.773109" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TriggerBonusLevel" sid="957563365759145">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="701823893189095">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="154964040070783" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ExitHiddenLevel" sid="344810060576677">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="659756570945055" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Door" sid="962271392066840">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="732564759960223" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Doors" sid="676792360204764">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="207030916512759">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="371992327310412" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\User\Desktop\BSE18bFT SEMESTER 5\Multimedia &amp; Apps\assignmnts\game assets\Angle-BARRIERS\stoneWallArchway_E.png">
+                        <collision-poly>
+                            <point x="0.909091" y="0.131868" />
+                            <point x="0.909091" y="0.293956" />
+                            <point x="0.984848" y="0.46978" />
+                            <point x="0.0151515" y="0.997253" />
+                            <point x="0.0909091" y="0.293956" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Endgame" sid="726146797560064">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+        <layout>bonus.xml</layout>
+        <layout>level2.xml</layout>
+        <layout>level3.xml</layout>
+        <layout>End.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>evtBonus.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>Event sheet 4.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="32" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
